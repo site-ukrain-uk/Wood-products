@@ -1,0 +1,491 @@
+.contact {
+    position: fixed;     /* Фіксує кнопку на екрані */
+    bottom: 20px;        /* Відступ знизу */
+    right: 20px;         /* Відступ справа */
+    background: red;     /* Колір як на твоєму скріншоті */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px; /* Робить краї закругленими */
+    cursor: pointer;     /* Змінює курсор на "руку" */
+    display: flex;
+    align-items: center;
+}
+
+.foto {
+width: 700px;
+height: 500px;
+}
+
+.class1 {
+    background: red;     
+    color: white;
+    
+}
+
+.zagolovok {
+   padding-left: 550px;
+   padding-right: 550px;
+   background-color: rgb(150, 132, 105);
+   padding-top: 50px;
+   padding-bottom: 50px;
+   border-radius: 50px;
+   animation: fadeInRow 1.5s ease-out forwards;
+   font-family: "Playfair Display", serif;
+   white-space: nowrap;
+   
+}
+
+.osnova {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.vurib {
+        display: flex;
+        justify-content: space-between; /* Розштовхує кнопки по краях контейнера */
+        
+        max-width: 900px;      /* Обмежуємо ширину, щоб кнопки були ближче до середини */
+        margin: 40px auto;     /* Центруємо весь блок на сторінці та додаємо відступ зверху */
+        
+        padding: 0 20px;       /* Невеликий захисний відступ для мобільних телефонів */
+    }
+
+    /* Стиль самих кнопок */
+    .vurib a {
+        text-decoration: none;
+        color: #8b4513;        /* Коричневий колір тексту */
+        font-weight: bold;
+        font-size: 24px;       /* Великий шрифт */
+        
+        /* РОЗМІР КНОПКИ: 20px висота, 80px ширина з кожного боку */
+        padding: 20px 80px; 
+        
+        border: 3px solid #8b4513; /* Товста рамка */
+        border-radius: 12px;       /* Закруглені кути */
+        
+        display: inline-block;
+        transition: all 0.3s ease; /* Плавна зміна кольору та розміру */
+        text-align: center;
+        
+        /* Щоб обидві кнопки були однакової ширини, навіть якщо тексту різно */
+        min-width: 250px; 
+    }
+
+    /* Ефект при наведенні мишкою */
+    .vurib a:hover {
+        background-color: #8b4513; /* Заливка фону коричневим */
+        color: white;              /* Колір тексту стає білим */
+        transform: scale(1.05);    /* Кнопка трохи збільшується */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Легка тінь */
+    }
+
+
+    @keyframes fadeInRow {
+    0% {
+        opacity: 0;            /* Повністю прозорий */
+        transform: translateY(20px); /* Трішки нижче своєї позиції */
+    }
+    100% {
+        opacity: 1;            /* Повністю видимий */
+        transform: translateY(0);    /* Повертається на своє місце */
+    }
+}
+
+
+.photo-grid {
+    display: flex;            /* Ставимо в ряд */
+    justify-content: center;  /* Центруємо групу фото */
+    gap: 30px;                /* Відступ між фотографіями */
+    padding: 40px 20px;
+    flex-wrap: wrap;          /* Щоб на телефонах вони стали одна під одну */
+}
+
+.photo-item {
+    background: white;        /* Біла підкладка */
+    padding: 15px;            /* Відступ від краю до фото */
+    border-radius: 0px;       /* Прямі кути часто виглядають елітнішими, ніж сильно закруглені */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05); /* Дуже легка, майже непомітна тінь */
+    transition: all 0.4s ease;
+    border: 1px solid #eee;   /* Ледь помітна рамка */
+}
+
+.photo-item:hover {
+    transform: translateY(-10px); /* Картка плавно піднімається при наведенні */
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+
+/* Контейнер каталогу */
+.premium-catalog {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Сама таблиця */
+.luxury-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Шапка таблиці — стримана розкіш */
+.luxury-table th {
+    padding: 25px 15px;
+    text-align: center;
+    border-bottom: 1px solid #d4af37; /* Золота тонка лінія */
+    color: #bc9824; /* Золотистий колір тексту */
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+/* Комірки таблиці */
+.luxury-table td {
+    padding: 60px 20px; /* Багато простору між виробами */
+    border-bottom: 1px solid #f2f2f2;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* ВЕЛИКІ ЕСТЕТИЧНІ ФОТО */
+.photo-cell img {
+    width: 400px !important;    /* Великий розмір */
+    height: 500px !important;   /* Високе фото */
+    object-fit: cover;          /* Зберігає пропорції */
+    border-radius: 2px;         /* Мінімальне закруглення для строгості */
+    box-shadow: 0 15px 45px rgba(0,0,0,0.07); /* М'яка "дорога" тінь */
+}
+
+/* Текст розмірів */
+.info-cell {
+    font-size: 22px;
+    color: #3d2b1f;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Ціна */
+.price-cell {
+    font-size: 26px;
+    font-weight: 600;
+    color: #3d2b1f;
+    white-space: nowrap;
+}
+
+/* Ефект при наведенні */
+.luxury-table tr:hover {
+    background-color: #fafafa;
+    transition: 0.3s ease;
+}
+
+
+.back-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-gold-line {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #3d2b1f;
+    position: relative;
+    padding-bottom: 8px;
+    transition: color 0.4s ease;
+}
+
+.btn-gold-line::after {
+    content: '';
+    position: absolute;
+    width: 30%; /* Лінія спочатку коротка */
+    height: 1px;
+    bottom: 0;
+    left: 35%; /* По центру */
+    background-color: #d4af37;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.btn-gold-line:hover {
+    color: #bc9824;
+}
+
+.btn-gold-line:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+.floating-contact {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #3d2b1f; /* Наш темний шоколад */
+    color: #d4af37 !important; /* Золото */
+    text-decoration: none;
+    border-radius: 50px; /* Округла форма */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    z-index: 1000; /* Щоб була поверх таблиці */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Іконка */
+.contact-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Ефект при наведенні */
+.floating-contact:hover {
+    transform: scale(1.05) translateY(-5px);
+    background-color: #4a3728;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    color: #fff !important;
+}
+
+/* Анімація легкого пульсування, щоб привернути увагу */
+@keyframes pulse-gold {
+    0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
+.floating-contact {
+    animation: pulse-gold 2s infinite;
+}
+
+.reviews-page {
+    max-width: 1000px; /* Оптимальна ширина для двох великих скріншотів */
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.gold-title {
+    text-align: center;
+    color: #3d2b1f;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+/* Сітка на 2 колонки */
+.reviews-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Рівно дві колонки */
+    gap: 50px; /* Більша відстань між фото для "дорогого" вигляду */
+}
+
+.review-item {
+    background: #fff;
+    border: 1px solid #f0e6dd;
+    padding: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    transition: all 0.5s ease;
+}
+
+.review-item img {
+    width: 100%;
+    height: auto; /* Зберігаємо повний скріншот без обрізки */
+    display: block;
+}
+
+/* Ефект фокусу */
+.review-item:hover {
+    transform: scale(1.03);
+    border-color: #d4af37;
+    box-shadow: 0 20px 50px rgba(74, 55, 40, 0.12);
+}
+
+/* Для мобільних пристроїв — в одну колонку */
+@media (max-width: 768px) {
+    .reviews-grid-2col {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #bc9824;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+}
+
+.back-link:hover {
+    border-bottom: 1px solid #d4af37;
+    color: #3d2b1f;
+}
+
+
+.premium-footer {
+    padding: 100px 20px; /* Більше простору для солідності */
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-line {
+    width: 40px;
+    height: 2px;
+    background-color: #d4af37;
+    margin: 0 auto 40px;
+}
+
+.master-name {
+    font-size: 24px;
+    color: #3d2b1f;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #bc9824; /* Золото */
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.footer-phone {
+    display: block;
+    font-size: 28px;
+    font-weight: 300;
+    color: #3d2b1f;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.footer-phone:hover {
+    color: #bc9824;
+}
+
+.footer-subtext {
+    font-size: 14px;
+    color: #8c7b6e;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* АДАПТИВНИЙ ДИЗАЙН ДЛЯ МОБІЛЬНИХ */
+@media (max-width: 768px) {
+    
+    /* 1. Налаштування загальних відступів */
+    .premium-catalog, .reviews-page {
+        padding: 20px 10px;
+        margin: 20px auto;
+    }
+
+    /* 2. Трансформація таблиці в картки */
+    .luxury-table, .luxury-table thead, .luxury-table tbody, .luxury-table th, .luxury-table td, .luxury-table tr {
+        display: block; /* Перетворюємо таблицю на список блоків */
+    }
+
+    .luxury-table thead {
+        display: none; /* Ховаємо заголовки таблиці на мобільних */
+    }
+
+    .luxury-table tr {
+        margin-bottom: 40px; /* Відступ між виробами */
+        border-bottom: 2px solid #f0e6dd;
+        padding-bottom: 20px;
+    }
+
+    .luxury-table td {
+        padding: 10px 0;
+        border: none;
+        text-align: center;
+    }
+
+    /* 3. Фото на весь екран */
+    .photo-cell img {
+        width: 100% !important; /* Фото займає всю ширину екрана */
+        height: auto !important; /* Висота підлаштовується автоматично */
+        max-height: 450px;
+        border-radius: 8px;
+    }
+
+    /* 4. Текст та ціна */
+    .info-cell {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .price-cell {
+        font-size: 22px;
+        color: #3d2b1f;
+        font-weight: 700;
+        background: #fdfaf7;
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 4px;
+    }
+
+    /* 5. Відгуки (сітка стає в одну колонку) */
+    .reviews-grid-2col, .reviews-grid {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+    }
+
+    /* 6. Футер (імя та телефон) */
+    .master-name {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .footer-phone {
+        font-size: 22px;
+    }
+
+    /* 7. Плаваюча кнопка (трохи менша, щоб не заважала) */
+    .floating-contact {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+}
